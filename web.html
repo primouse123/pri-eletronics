@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\hp\Desktop\celine 201\celine 201\web.css">
+</head>
+<body>
+    <form id="login-form">
+        <lable for="name">Name:</lable>
+        <input type="text" id="name" name="name" required>
+    
+    <label for="passward">passward:</label>
+<input type="passward" id="passward" name="passward" required>
+
+<label for="gender">gender:</label>
+<select id="gender" name="gender" required>
+    <option value="">select gender </option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+<label for="dob">date of birth:</label>
+<input type="date" id="dob" name="dob" required>
+
+<input type="submit" value="login">
+</form>
+
+
+<script>
+    // add event listener to form submission
+    document.getElementById("login-form") .addEventListener("submit", funtion(event) {
+        event.preventDefault(); // prevent default form submission behavior
+
+        // get form value
+        var name = document.getElementById("name").value;
+        var passward = document. getElementById("paswward"). value;
+        var gender = document.getElementById("gender"). value;
+        var dob = document.getElementById("dob"). value;
+
+        // you can add validation and authentication logic here 
+        console. log("name: " + name);
+        console. log("passward: " + passward);
+        console. log("gender: " + gender);
+        console. log("date of birth: " + dob)
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
